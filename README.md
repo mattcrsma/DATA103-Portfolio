@@ -1,9 +1,7 @@
-# Consolidated README for DATA103 Notebooks
-
 ## Table of Contents
-1. [Explainability Methods](#explainability-methods)
-2. [Gradient Boosting](#gradient-boosting)
-3. [Project Notebook](#project-notebook)
+1. [Explainability Methods](#1-explainability-methods)
+2. [Gradient Boosting](#2-gradient-boosting)
+3. [Project Notebook](#3-project-notebook)
 
 ---
 
