@@ -2,8 +2,6 @@
 1. [Explainability Methods](#1-explainability-methods)
 2. [Gradient Boosting](#2-gradient-boosting)
 3. [DATA103 Project: Project Notebook](#3-data103-project-project-notebook)
-4. [DATANVI Project: Data Investigation and Insights](#4-datanvi-project-data-investigation-and-insights)
-
 ---
 
 ## 1. Explainability Methods
@@ -105,54 +103,5 @@ shap.waterfall_plot(shap.Explanation(values, base_values, data))
 ```
 
 ---
-
-## 4. DATANVI Project: Data Investigation and Insights
-
-### Introduction
-This notebook focuses on detailed data investigation and generating actionable insights. The methods employed include data profiling, visualization, and advanced analytics.
-
-```
-import pandas as pd
-data = pd.read_csv('your_dataset.csv')
-```
-
-### Chapter 1: Data Profiling
-- Detailed summary of the dataset: Types, distributions, and missing values.
-- Tools and libraries for automated profiling.
-
-```
-from pandas_profiling import ProfileReport
-profile = ProfileReport(data)
-profile.to_widgets()
-```
-
-### Chapter 2: Visualization and Trends
-- Key visualizations: Correlation matrices, trend lines, and time-series plots.
-- Identifying patterns and anomalies.
-
-```
-import seaborn as sns
-sns.heatmap(data.corr(), annot=True)
-```
-
-### Chapter 3: Advanced Insights
-- Advanced analyses: Clustering, segmentation, and predictive modeling.
-- Recommendations and actionable insights based on findings.
-
-```
-from sklearn.cluster import KMeans
-kmeans = KMeans(n_clusters=3)
-kmeans.fit(data)
-```
-
----
-
-### Usage Instructions
-1. **Install Required Libraries:** Ensure that all necessary Python libraries are installed, such as `scikit-learn`, `shap`, and `lime`.
-   ```
-   pip install -r requirements.txt
-   ```
-2. **Run the Notebooks:** Execute each notebook sequentially to understand the techniques and their implementations.
-3. **Project Integration:** Use the project notebook as a template for applying the methods to your own datasets.
 
 For any questions or collaboration opportunities, please contact Matthew Cuaresma at matthew_cuaresma@dlsu.edu.ph
