@@ -1,7 +1,8 @@
 ## Table of Contents
 1. [Explainability Methods](#1-explainability-methods)
 2. [Gradient Boosting](#2-gradient-boosting)
-3. [Project Notebook](#3-project-notebook)
+3. [DATA103 Project: Project Notebook](#3-data103-project-project-notebook)
+4. [DATANVI Project: Data Investigation and Insights](#4-datanvi-project-data-investigation-and-insights)
 
 ---
 
@@ -11,7 +12,6 @@
 This notebook explores various methods for explaining machine learning models. The focus is on post-hoc interpretability techniques and their practical implementation.
 
 ```
-# Sample code snippet
 from sklearn.inspection import permutation_importance
 ```
 
@@ -43,7 +43,6 @@ shap.summary_plot(shap_values, data)
 This notebook delves into gradient boosting techniques, focusing on implementation and performance tuning.
 
 ```
-# Sample code snippet
 from sklearn.ensemble import GradientBoostingClassifier
 ```
 
@@ -69,13 +68,12 @@ grid.fit(X_train, y_train)
 
 ---
 
-## 3. Project Notebook
+## 3. DATA103 Project: Project Notebook
 
 ### Introduction
 The project notebook consolidates the knowledge from the previous notebooks and applies it to a real-world dataset.
 
 ```
-# Sample code snippet
 import pandas as pd
 data = pd.read_csv('dataset.csv')
 ```
@@ -104,6 +102,47 @@ accuracy_score(y_test, model.predict(X_test))
 ```
 # SHAP-based insight
 shap.waterfall_plot(shap.Explanation(values, base_values, data))
+```
+
+---
+
+## 4. DATANVI Project: Data Investigation and Insights
+
+### Introduction
+This notebook focuses on detailed data investigation and generating actionable insights. The methods employed include data profiling, visualization, and advanced analytics.
+
+```
+import pandas as pd
+data = pd.read_csv('your_dataset.csv')
+```
+
+### Chapter 1: Data Profiling
+- Detailed summary of the dataset: Types, distributions, and missing values.
+- Tools and libraries for automated profiling.
+
+```
+from pandas_profiling import ProfileReport
+profile = ProfileReport(data)
+profile.to_widgets()
+```
+
+### Chapter 2: Visualization and Trends
+- Key visualizations: Correlation matrices, trend lines, and time-series plots.
+- Identifying patterns and anomalies.
+
+```
+import seaborn as sns
+sns.heatmap(data.corr(), annot=True)
+```
+
+### Chapter 3: Advanced Insights
+- Advanced analyses: Clustering, segmentation, and predictive modeling.
+- Recommendations and actionable insights based on findings.
+
+```
+from sklearn.cluster import KMeans
+kmeans = KMeans(n_clusters=3)
+kmeans.fit(data)
 ```
 
 ---
