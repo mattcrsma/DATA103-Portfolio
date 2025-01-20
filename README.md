@@ -69,38 +69,69 @@ grid.fit(X_train, y_train)
 ## 3. DATA103 Project: Project Notebook
 
 ### Introduction
-The project notebook consolidates the knowledge from the previous notebooks and applies it to a real-world dataset.
+This project explores advanced data analysis and visualization techniques using Python. The focus is on uncovering insights through data preprocessing, statistical analysis, and creating dynamic dashboards. The notebook integrates key libraries to handle data, perform computations, and build interactive visualizations.
 
-```
-import pandas as pd
-data = pd.read_csv('dataset.csv')
-```
+### Prerequisites
+Before running this notebook, ensure you have the following installed:
 
-### Chapter 1: Data Exploration
-- Overview of the dataset: Summary statistics and visualization.
-- Handling missing data and outliers.
+- Python 3.7+  
+- Jupyter Notebook or JupyterLab  
+- Key Python libraries:
+  - Numpy (`pip install numpy`)  
+  - Pandas (`pip install pandas`)  
+  - Matplotlib (`pip install matplotlib`)  
+  - Seaborn (`pip install seaborn`)  
+  - Plotly (`pip install plotly`)  
+  - Dash (`pip install dash`)  
+  - Scipy (`pip install scipy`)  
+  - Dash Bootstrap Components (`pip install dash-bootstrap-components`)  
 
-```
-data.describe()
-```
+Additionally, ensure the required datasets are downloaded and accessible in the working directory. The project uses the following dataset:
 
-### Chapter 2: Model Development
-- Feature engineering and selection.
-- Model training and evaluation using explainability methods.
+- [Loan Default Dataset](https://www.kaggle.com/datasets/nikhil1e9/loan-default)
 
-```
-from sklearn.metrics import accuracy_score
-accuracy_score(y_test, model.predict(X_test))
-```
+### Features
+1. **Data Loading and Preprocessing:**  
+   - Handles missing values and outliers.  
+   - Transforms data for optimal usability.  
+   - Supports various file formats, including `.csv` and `.parquet`.  
 
-### Chapter 3: Results and Insights
-- Performance metrics and visualizations.
-- Interpretation of results using SHAP and LIME.
+2. **Statistical Analysis:**  
+   - Performs correlation and descriptive statistics.  
+   - Offers visual insights with correlation matrices.  
 
-```
-# SHAP-based insight
-shap.waterfall_plot(shap.Explanation(values, base_values, data))
-```
+3. **Dynamic Visualizations:**  
+   - Interactive line, bar, and scatter plots.  
+   - Heatmaps to explore data distributions.  
+
+4. **Dashboard Integration:**  
+   - Filters for dynamic data exploration (e.g., date, category, and numerical ranges).  
+   - Visualizes trends and patterns in an accessible format.  
+
+5. **Advanced Features (if applicable):**  
+   - Spatial analysis using geolocation data.  
+   - Temporal insights with time-series analysis.  
+
+### How to Run
+1. Clone the repository or download the notebook file.  
+2. Ensure dependencies are installed by running:  
+   ```bash
+   pip install numpy pandas matplotlib seaborn plotly dash scipy dash-bootstrap-components
+   ```  
+3. Launch Jupyter Notebook and open the `.ipynb` file:  
+   ```bash
+   jupyter notebook
+   ```  
+4. Follow the steps in the notebook to process and analyze the data.  
+5. If running the dashboard, execute the respective script or cell to deploy the app.  
+
+### Notes
+- Dataset paths must be correctly defined in the notebook.  
+- Ensure you have sufficient computational resources for large datasets.  
+
+### Limitations
+- Predictive modeling is not included but can be extended in future iterations.  
+- Some advanced visualizations may require tweaking depending on dataset specifics.  
 
 ---
 
