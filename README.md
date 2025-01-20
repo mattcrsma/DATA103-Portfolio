@@ -155,3 +155,4 @@ kmeans.fit(data)
 2. **Run the Notebooks:** Execute each notebook sequentially to understand the techniques and their implementations.
 3. **Project Integration:** Use the project notebook as a template for applying the methods to your own datasets.
 
+For any questions or collaboration opportunities, please contact Matthew Cuaresma at matthew_cuaresma@dlsu.edu.ph
